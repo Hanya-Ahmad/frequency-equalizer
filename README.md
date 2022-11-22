@@ -22,12 +22,11 @@ streamlit run main.py
 
 
 3. Letters mode where user can alter the amplitudes of certain letters' or sounds' frequencies to enhance them or remove them completely.
-![Screenshot (106)](https://user-images.githubusercontent.com/93945902/202722825-0a08abef-1cbd-4a14-b058-6eb2f9180cd3.png)
+![Screenshot (109)](https://user-images.githubusercontent.com/93945902/203292195-a5b476ed-2784-4c1b-8e56-a03fc6c5d3f7.png)
 
 
-4. Arrhythmia mode where we plot an ECG file with arrhythmia and control its amplitude using a slider.
-![Screenshot (107)](https://user-images.githubusercontent.com/93945902/202727132-76e71b9c-f046-490c-b6c8-2fc0b7a58fbc.png)
-*Note: notice the decrease in the arrhythmia peaks  moving the slider to 0.*
-![Screenshot (108)](https://user-images.githubusercontent.com/93945902/202727154-8ce3a231-af5a-4bad-b226-6dad6b2532d2.png)
+4. Arrhythmia mode where we plot an ECG file with arrhythmia and control the arrhythmia peaks' amplitude using a slider.
+![Screenshot (110)](https://user-images.githubusercontent.com/93945902/203292232-ab79c880-a9b0-4f01-b221-8dac69e11c61.png)
+
 
 
