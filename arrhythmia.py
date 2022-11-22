@@ -24,7 +24,7 @@ import functions as fn
 # import streamlit_nested_layout
 
 
-def arrhythima(main_column, controls_column):
+def arrhythmia(main_column, controls_column):
 
     ecg = electrocardiogram()
     fs = 360

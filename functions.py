@@ -16,10 +16,10 @@ from scipy import signal
 import streamlit_nested_layout
 
 
-#-------------------------------------------------------------------player for audio-------------------------------------------------------------------#
+#-------------------------------------------------------------------session state variables------------------------------------------------------------------#
 
-if 'size1' not in st.session_state:
-    st.session_state.size1 = 0
+if 'size' not in st.session_state:
+    st.session_state.size = 0
 
 
 #-------------------------------------------------------------------audio player-------------------------------------------------------------------#
@@ -93,9 +93,9 @@ def sliders_generation(max_freq_list, main_column, number_of_sliders):
                 instruments = ["Drum", "Guitar", "Flute"]
                 st.write(instruments[i])
             else:
-                vowels = [" ' SH ' sound", "  ' O ' sound",
+                letters = [" ' SH ' sound", "  ' O ' sound",
                           "  ' A ' sound", "  ' R ' sound", "  ' B ' sound"]
-                st.write(vowels[i])
+                st.write(letters[i])
     return sliders_data
 
 
@@ -164,22 +164,22 @@ def dynamic_plot(line_plot, df, controls_column, main_column, width, height):
                 lines, x, y = altair_plot(step_df, width, height)
                 line_plot.altair_chart(lines)
                 size = i + burst
-                st.session_state.size1 = size
+                st.session_state.size = size
             line_plot = line_plot.altair_chart(lines)
 
         if(st.session_state.counter % 2 == 0):
 
-            for i in range(st.session_state.size1-burst, N):
-                step_df = df.iloc[0:st.session_state.size1]
+            for i in range(st.session_state.size-burst, N):
+                step_df = df.iloc[0:st.session_state.size]
                 lines, x, y = altair_plot(step_df, width, height)
                 line_plot = line_plot.altair_chart(lines)
         else:
 
-            for i in range(st.session_state.size1-burst, N):
+            for i in range(st.session_state.size-burst, N):
                 step_df = df.iloc[i:size]
                 lines, x, y = altair_plot(step_df, width, height)
                 line_plot = line_plot.altair_chart(lines)
-                st.session_state.size1 = size
+                st.session_state.size = size
                 size = i + burst
                 if(i == N-burst):
                     break

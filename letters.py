@@ -1,7 +1,7 @@
 
 import numpy as np
 
-def Vowels_modification(frequency, amplitude, sliders_data,main_column,controls_column):
+def letters_modification(frequency, amplitude, sliders_data,main_column,controls_column):
     controls_column.write("Modified Audio")
     empty = controls_column.empty()
     empty.empty()

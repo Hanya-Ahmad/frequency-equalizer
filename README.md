@@ -21,7 +21,7 @@ streamlit run main.py
 ![Screenshot (105)](https://user-images.githubusercontent.com/93945902/202721562-14ca845e-25b0-457a-81c7-066922496e9b.png)
 
 
-3. Vowels mode where user can alter the amplitudes of certain letters' or sounds' frequencies to enhance them or remove them completely.
+3. Letters mode where user can alter the amplitudes of certain letters' or sounds' frequencies to enhance them or remove them completely.
 ![Screenshot (106)](https://user-images.githubusercontent.com/93945902/202722825-0a08abef-1cbd-4a14-b058-6eb2f9180cd3.png)
 
 
